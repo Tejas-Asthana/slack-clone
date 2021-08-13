@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import Sidebar from "./components/Sidebar.js";
 import Chat from "./components/Chat.js";
+
 import "./App.css";
 
 function App() {
