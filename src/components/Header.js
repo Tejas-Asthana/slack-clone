@@ -5,17 +5,15 @@ import { Avatar } from "@material-ui/core";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import SearchIcon from "@material-ui/icons/Search";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
-let Header = () => {
+let Header = (props) => {
   return (
     <div className="header">
       {/* will have user icon */}
       <div className="header-left">
         <Avatar
           className="header-avatar"
-          //   alt={user?.displayName}
-          //   src={user?.photoURL}
-          alt="Avatar icon"
-          src=""
+          alt={props.user?.name}
+          src={props.user?.userimage}
         />
         <AccessTimeIcon />
       </div>
